@@ -1,5 +1,0 @@
-Huawei>
-<Huawei>display interface G0/0/0
-                          ^
-Error: Wrong parameter found at '^' position.
-<Huawei>

@@ -1,5 +1,0 @@
-R3>
-<R3>save
-The current configuration will be written to the device.
-Are you sure to continue?[Y/N]Y
-Now saving the current configuration to the slot 17.

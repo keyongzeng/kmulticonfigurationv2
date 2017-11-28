@@ -1,7 +1,0 @@
-Huawei>
-<Huawei>save
-The current configuration will be written to the device.
-Are you sure to continue?[Y/N]Y
-Now saving the current configuration to the slot 0.
-Save the configuration successfully.
-<Huawei>
