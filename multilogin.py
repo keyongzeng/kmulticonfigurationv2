@@ -223,6 +223,8 @@ def get_commands(val):
 
 project = ""
 while True:
+    if not os.path.exists("log"):
+        os.mkdir("log")
     project = input("请输入本次工程名：").strip()
     if len(project) == 0:
         print("请输出工程号")
