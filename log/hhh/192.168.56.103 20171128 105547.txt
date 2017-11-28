@@ -1,0 +1,112 @@
+R3>
+<R3>display cu
+#
+sysname R3
+#
+undo nap slave enable
+#
+aaa
+ authentication-scheme default
+ authorization-scheme default
+ accounting-scheme default
+ domain default
+ domain default_admin
+ local-user admin password cipher R'J**ZipYHani^>"qh^;OWl#
+ local-user admin service-type http
+ local-user huawei password cipher I*XvDbC)J3|"&H5F^2_UOWl#
+ local-user huawei privilege level 3
+ local-user huawei service-type telnet ssh
+#
+firewall zone Local
+ priority 16
+#
+interface Ethernet0/0/0
+#
+interface Ethernet0/0/1
+#
+interface Serial0/0/0
+ link-protocol ppp
+#
+interface Serial0/0/1
+ link-protocol ppp
+#
+interface Serial0/0/2
+ link-protocol ppp
+#
+interface Serial0/0/3
+ link-protocol ppp
+#
+interface GigabitEthernet0/0/0
+ ip address 192.168.56.103 255.255.255.0
+#
+interface GigabitEthernet0/0/1
+#
+interface GigabitEthernet0/0/2
+#
+interface GigabitEthernet0/0/3
+#
+wlan
+#
+interface NULL0
+#
+stelnet server enable
+ssh user huawei
+ssh user huawei authentication-type password
+ssh client first-time enable
+#
+user-interface con 0
+user-interface vty 0 4
+ authentication-mode aaa
+user-interface vty 16 20
+#
+return
+<R3>display interface G0/0/0
+GigabitEthernet0/0/0 current state : UP
+Line protocol current state : UP
+Last line protocol up time : 2017-11-28 10:44:59 UTC-08:00
+Description:
+Route Port,The Maximum Transmit Unit is 1500
+Internet Address is 192.168.56.103/24
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 5489-9873-0934
+Last physical up time   : 2017-11-28 10:44:59 UTC-08:00
+Last physical down time : 2017-11-28 10:44:58 UTC-08:00
+Current system time: 2017-11-28 10:55:48-08:00
+Hardware address is 5489-9873-0934
+    Last 300 seconds input rate 163 bytes/sec, 2 packets/sec
+    Last 300 seconds output rate 216 bytes/sec, 3 packets/sec
+    Input: 132310 bytes, 2303 packets
+    Output: 183272 bytes, 2585 packets
+    Input:
+      Unicast: 2273 packets, Multicast: 19 packets
+      Broadcast: 11 packets
+    Output:
+      Unicast: 2545 packets, Multicast: 0 packets
+      Broadcast: 40 packets
+    Input bandwidth utilization  :    0%
+    Output bandwidth utilization :    0%
+
+<R3>display interface G0/0/1
+GigabitEthernet0/0/1 current state : DOWN
+Line protocol current state : DOWN
+Description:
+Route Port,The Maximum Transmit Unit is 1500
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 5489-9873-0935
+Last physical up time   : -
+Last physical down time : 2017-11-28 10:40:00 UTC-08:00
+Current system time: 2017-11-28 10:55:49-08:00
+Hardware address is 5489-9873-0935
+    Last 300 seconds input rate 0 bytes/sec, 0 packets/sec
+    Last 300 seconds output rate 0 bytes/sec, 0 packets/sec
+    Input: 0 bytes, 0 packets
+    Output: 0 bytes, 0 packets
+    Input:
+      Unicast: 0 packets, Multicast: 0 packets
+      Broadcast: 0 packets
+    Output:
+      Unicast: 0 packets, Multicast: 0 packets
+      Broadcast: 0 packets
+    Input bandwidth utilization  :    0%
+    Output bandwidth utilization :    0%
+
+<R3>

@@ -1,0 +1,66 @@
+R3>
+<R3>display cu
+#
+sysname R3
+#
+undo nap slave enable
+#
+aaa
+ authentication-scheme default
+ authorization-scheme default
+ accounting-scheme default
+ domain default
+ domain default_admin
+ local-user admin password cipher R'J**ZipYHani^>"qh^;OWl#
+ local-user admin service-type http
+ local-user huawei password cipher I*XvDbC)J3|"&H5F^2_UOWl#
+ local-user huawei privilege level 3
+ local-user huawei service-type telnet ssh
+#
+firewall zone Local
+ priority 16
+#
+interface Ethernet0/0/0
+#
+interface Ethernet0/0/1
+#
+interface Serial0/0/0
+ link-protocol ppp
+#
+interface Serial0/0/1
+ link-protocol ppp
+#
+interface Serial0/0/2
+ link-protocol ppp
+#
+interface Serial0/0/3
+ link-protocol ppp
+#
+interface GigabitEthernet0/0/0
+ ip address 192.168.56.103 255.255.255.0
+#
+interface GigabitEthernet0/0/1
+#
+interface GigabitEthernet0/0/2
+#
+interface GigabitEthernet0/0/3
+#
+wlan
+#
+interface NULL0
+#
+stelnet server enable
+ssh user huawei
+ssh user huawei authentication-type password
+ssh client first-time enable
+#
+user-interface con 0
+user-interface vty 0 4
+ authentication-mode aaa
+user-interface vty 16 20
+#
+return
+<R3>save
+The current configuration will be written to the device.
+Are you sure to continue?[Y/N]Y
+Now saving the current configuration to the slot 17.

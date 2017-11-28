@@ -1,0 +1,78 @@
+R2>
+<R2>display interface G0/0/0
+GigabitEthernet0/0/0 current state : UP
+Line protocol current state : UP
+Last line protocol up time : 2017-11-28 10:40:02 UTC-08:00
+Description:
+Route Port,The Maximum Transmit Unit is 1500
+Internet Address is 192.168.56.101/24
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 5489-9857-1060
+Last physical up time   : 2017-11-28 10:40:02 UTC-08:00
+Last physical down time : 2017-11-28 10:39:59 UTC-08:00
+Current system time: 2017-11-28 10:41:36-08:00
+Hardware address is 5489-9857-1060
+    Last 300 seconds input rate 0 bytes/sec, 0 packets/sec
+    Last 300 seconds output rate 0 bytes/sec, 0 packets/sec
+    Input: 5123 bytes, 86 packets
+    Output: 5325 bytes, 80 packets
+    Input:
+      Unicast: 80 packets, Multicast: 1 packets
+      Broadcast: 5 packets
+    Output:
+      Unicast: 76 packets, Multicast: 0 packets
+      Broadcast: 4 packets
+    Input bandwidth utilization  :    0%
+    Output bandwidth utilization :    0%
+
+<R2>display interface G0/0/1
+GigabitEthernet0/0/1 current state : DOWN
+Line protocol current state : DOWN
+Description:
+Route Port,The Maximum Transmit Unit is 1500
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 5489-9857-1061
+Last physical up time   : -
+Last physical down time : 2017-11-28 10:39:59 UTC-08:00
+Current system time: 2017-11-28 10:41:37-08:00
+Hardware address is 5489-9857-1061
+    Last 300 seconds input rate 0 bytes/sec, 0 packets/sec
+    Last 300 seconds output rate 0 bytes/sec, 0 packets/sec
+    Input: 0 bytes, 0 packets
+    Output: 0 bytes, 0 packets
+    Input:
+      Unicast: 0 packets, Multicast: 0 packets
+      Broadcast: 0 packets
+    Output:
+      Unicast: 0 packets, Multicast: 0 packets
+      Broadcast: 0 packets
+    Input bandwidth utilization  :    0%
+    Output bandwidth utilization :    0%
+
+<R2>display interface G0/0/2
+GigabitEthernet0/0/2 current state : DOWN
+Line protocol current state : DOWN
+Description:
+Route Port,The Maximum Transmit Unit is 1500
+Internet protocol processing : disabled
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 5489-9857-1062
+Last physical up time   : -
+Last physical down time : 2017-11-28 10:39:59 UTC-08:00
+Current system time: 2017-11-28 10:41:38-08:00
+Hardware address is 5489-9857-1062
+    Last 300 seconds input rate 0 bytes/sec, 0 packets/sec
+    Last 300 seconds output rate 0 bytes/sec, 0 packets/sec
+    Input: 0 bytes, 0 packets
+    Output: 0 bytes, 0 packets
+    Input:
+      Unicast: 0 packets, Multicast: 0 packets
+      Broadcast: 0 packets
+    Output:
+      Unicast: 0 packets, Multicast: 0 packets
+      Broadcast: 0 packets
+    Input bandwidth utilization  :    0%
+    Output bandwidth utilization :    0%
+
+<R2>display interface G0/0/4
+                      ^
+Error: Wrong parameter found at '^' position.
+<R2>

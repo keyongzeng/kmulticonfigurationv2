@@ -1,0 +1,102 @@
+Huawei>
+<Huawei>display cu
+#
+sysname Huawei
+#
+cluster enable
+ntdp enable
+ndp enable
+#
+undo nap slave enable
+#
+drop illegal-mac alarm
+#
+diffserv domain default
+#
+drop-profile default
+#
+aaa
+ authentication-scheme default
+ authorization-scheme default
+ accounting-scheme default
+ domain default
+ domain default_admin
+ local-user admin password simple admin
+ local-user admin service-type http
+ local-user huawei password cipher <K.R)YFE!!(I\I9%HS7.!Q!!
+ local-user huawei privilege level 3
+ local-user huawei service-type telnet ssh
+#
+interface Vlanif1
+ ip address 192.168.56.104 255.255.255.0
+#
+interface MEth0/0/1
+#
+interface GigabitEthernet0/0/1
+ port link-type access
+#
+interface GigabitEthernet0/0/2
+#
+interface GigabitEthernet0/0/3
+#
+interface GigabitEthernet0/0/4
+#
+interface GigabitEthernet0/0/5
+#
+interface GigabitEthernet0/0/6
+#
+interface GigabitEthernet0/0/7
+#
+interface GigabitEthernet0/0/8
+#
+interface GigabitEthernet0/0/9
+#
+interface GigabitEthernet0/0/10
+#
+interface GigabitEthernet0/0/11
+#
+interface GigabitEthernet0/0/12
+#
+interface GigabitEthernet0/0/13
+#
+interface GigabitEthernet0/0/14
+#
+interface GigabitEthernet0/0/15
+#
+interface GigabitEthernet0/0/16
+#
+interface GigabitEthernet0/0/17
+#
+interface GigabitEthernet0/0/18
+#
+interface GigabitEthernet0/0/19
+#
+interface GigabitEthernet0/0/20
+#
+interface GigabitEthernet0/0/21
+#
+interface GigabitEthernet0/0/22
+#
+interface GigabitEthernet0/0/23
+#
+interface GigabitEthernet0/0/24
+#
+interface NULL0
+#
+stelnet server enable
+ssh user huawei
+ssh user huawei authentication-type password
+ssh user huawei service-type stelnet
+ssh client first-time enable
+#
+user-interface con 0
+user-interface vty 0 4
+ authentication-mode aaa
+#
+return
+<Huawei>save
+The current configuration will be written to the device.
+Are you sure to continue?[Y/N]Y
+Now saving the current configuration to the slot 0.
+Save the configuration successfully.
+<Huawei>

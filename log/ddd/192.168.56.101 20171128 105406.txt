@@ -1,0 +1,25 @@
+R2>
+<R2>display cu
+#
+sysname R2
+#
+undo nap slave enable
+#
+rsa peer-public-key 127.0.0.1
+ public-key-code begin
+  3047
+    0240
+      BD35F4E7 54DFF76A 3B6C29D8 9BCFD471 A81CCE32 6B8B278B A0EF4930 A7C8FE07
+      AB360EE8 E309F365 0C1FBFA7 6796E65F 001A3348 584B154A EDA9C5DB D66865DF
+    0203
+      010001
+ public-key-code end
+peer-public-key end
+#
+aaa
+ authentication-scheme default
+ authorization-scheme default
+ accounting-scheme default
+ domain default
+ domain default_admin
+ local-user admin password cipher ^|x_~N1s|7]
