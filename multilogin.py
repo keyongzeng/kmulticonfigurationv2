@@ -6,6 +6,7 @@ import telnetlib
 import threading
 import xlrd
 import os
+import proceess_data
 
 class LoginUseSSH(object):
     #初始化
@@ -246,7 +247,7 @@ for row in range(1,3000):
         login_method =  device_list.cell(row,4).value
         port = int(device_list.cell(row,5).value)
         canshu = device_list.cell(row,6).value
-        flag = device_list.cell(row,7).value
+        flag = device_list.cell(row,7).value.upper()
         if flag == "N":
             continue
         #print(ip,user,password,login_method,port,canshu,)
@@ -262,4 +263,5 @@ for i in thread_list:
     i.join()
     print(i.get_result())
 
-
+#生成合并文件
+proceess_data.process_data("log/%s" % project)
